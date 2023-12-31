@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./calc.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="" class="container">
+      <div class="backGround">
+        <div class="display">
+          <input
+            disabled
+            type="text"
+            placeholder="0"
+            class="display"
+            id="display"
+          />
+        </div>
+        <div class="row">
+          <input
+            type="button"
+            class="btn firstRow"
+            value="AC"
+            name="clear"
+            onclick="pakKon(clear.value)"
+          />
+          <input
+            type="button"
+            class="btn firstRow"
+            value="+/-"
+            name="reverse"
+            onclick="barax(reverse.value)"
+          />
+          <input
+            type="button"
+            class="btn firstRow"
+            value=" / "
+            name="devide"
+            onclick="actionBtn(devide.value)"
+          />
+          <input
+            type="button"
+            class="btn firstRow"
+            value="%"
+            name="percent"
+            onclick="darsad(percent.value)"
+          />
+        </div>
+        <div class="row">
+          <input
+            type="button"
+            class="btn"
+            value=" 7 "
+            name="seven"
+            onclick="addToCalc(seven.value)"
+          />
+          <input
+            type="button"
+            class="btn"
+            value=" 8 "
+            name="eight"
+            onclick="addToCalc(eight.value)"
+          />
+          <input
+            type="button"
+            class="btn"
+            value=" 9 "
+            name="nine"
+            onclick="addToCalc(nine.value)"
+          />
+          <input
+            type="button"
+            class="btn actionBtn"
+            value=" * "
+            name="time"
+            onclick="actionBtn(time.value)"
+          />
+        </div>
+        <div class="row">
+          <input
+            type="button"
+            class="btn"
+            value=" 4 "
+            name="four"
+            onclick="addToCalc(four.value)"
+          />
+          <input
+            type="button"
+            class="btn"
+            value=" 5 "
+            name="five"
+            onclick="addToCalc(five.value)"
+          />
+          <input
+            type="button"
+            class="btn"
+            value=" 6 "
+            name="six"
+            onclick="addToCalc(six.value)"
+          />
+          <input
+            type="button"
+            class="btn actionBtn"
+            value=" - "
+            name="minus"
+            onclick="actionBtn(minus.value)"
+          />
+        </div>
+        <div class="row">
+          <input
+            type="button"
+            class="btn"
+            value=" 1 "
+            name="one"
+            onclick="addToCalc(one.value)"
+          />
+          <input
+            type="button"
+            class="btn"
+            value=" 2 "
+            name="two"
+            onclick="addToCalc(two.value)"
+          />
+          <input
+            type="button"
+            class="btn"
+            value=" 3 "
+            name="three"
+            onclick="addToCalc(three.value)"
+          />
+          <input
+            type="button"
+            class="btn actionBtn"
+            value=" + "
+            name="plus"
+            onclick="actionBtn(plus.value)"
+          />
+        </div>
+        <div class="row">
+          <input
+            type="button"
+            class="btn"
+            value="0             "
+            name="zero"
+            style="border-radius: 37%"
+            onclick="addToCalc(zero.value)"
+          />
+          <input
+            type="button"
+            class="btn dot"
+            value="."
+            name="dot"
+            onclick="actionBtn(dot.value)"
+          />
+          <input
+            type="button"
+            class="btn actionBtn"
+            value=" = "
+            name="equal"
+            onclick="finilize()"
+          />
+        </div>
+      </div>
+    </form>
+
+    <script src="./calc.js"></script>
+  </body>
+</html>
